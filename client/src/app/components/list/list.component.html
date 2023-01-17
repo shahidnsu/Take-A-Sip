@@ -9,7 +9,7 @@
                 <h2>{{item.name}}</h2>
                 <h5>Flavor: {{item.selectedFlavor | uppercase}}</h5>
                 <h5><input class="noteHolder" [(ngModel)]="item.note" placeholder="Notes..."></h5>
-                <button class="btn remove"><fa-icon (click)="removeItem(item)" [icon]="trash"></fa-icon>
+                <button class="btn remove" (click)="removeItem(item)" ><fa-icon [icon]="trash"></fa-icon>
                 </button>
             </div>
         </div>
